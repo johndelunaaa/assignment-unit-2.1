@@ -11,7 +11,7 @@ let lastName = 'De Luna';
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 
-let fullName = "Johnny De Luna";
+let fullName = firstName + ' ' + lastName;
 console.log(fullName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
@@ -54,6 +54,8 @@ console.log(friendsPets);
 
 // 10 - Add two pets to your `pets` variable
 
+pets += 2;
+console.log(pets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
@@ -120,9 +122,14 @@ console.log(petStatus);
 
 
 let mostPets = '';
+
 if (pets > friendsPets) {
   mostPets = pets;
+} else {
+  mostPets = friendsPets;
 }
+
+console.log(mostPets);
 
 
 
@@ -143,15 +150,15 @@ let luckyResult = 1;
 
 switch (luckyNumber) {
 
-case "1":
+case 1:
   luckyResult = "First is the worst";
   break;
 
-case "2":
+case 2:
   luckyResult = "Second is the best";
   break;
 
-case "3":
+case 3:
   luckyResult = "Third is the one with the polka dot dress";
   break;
 
@@ -163,9 +170,6 @@ default:
 console.log(luckyResult);
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-
-
-
 
 
 
